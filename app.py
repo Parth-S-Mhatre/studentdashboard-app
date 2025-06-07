@@ -528,31 +528,11 @@ def main():
     st.markdown("""
     <div style="text-align: center; color: #666; padding: 1rem;">
         <p>🎓 School Student Performance Dashboard v1.0 BETA | Designed for Grades 6-12</p>
-        <p>Powered by Machine Learning | Remember: Consistent effort leads to better grades! 🌟</p>
+        <p>Powered by Machine Learning and Developed by Parth Mhatre | Remember: Consistent effort leads to better grades! 🌟</p>
+         <p>&copy; 2025 Parth Mhatre | Studentdashboard-app. All rights reserved.</p>
         <p><small>⚠️ Beta Version: Please report any issues or suggestions for improvement</small></p>
     </div>
     """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
-from flask import Flask,render_template,request
-from text_summarizer import summazier
-
-app=Flask(__name__)
-@app.route('/')
-def index():
-    return render_template('index.html')
-@app.route('/summarize',methods=['GET','POST'])
-def summarize():
-    if request.method=='POST':
-        rawtext=request.form['raw_text']
-        summazier(rawtext)
-        summary,original_text,original_length,summary_length=summazier(rawtext)
-    return render_template('summary.html',summary=summary,original_text=original_text,original_length=original_length,summary_length=summary_length)
-
-
-
-
-
-if __name__=="__main__":
-    app.run(debug=True)
