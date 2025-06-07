@@ -2,5 +2,5 @@ pandas
 seaborn
 scikit-learn
 matplotlib
-numpy
-streamlit
+plotly
+joblib
