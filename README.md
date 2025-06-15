@@ -243,9 +243,6 @@ student-performance-dashboard/
 │   ├── column_transformer.pkl
 │   └── scaler.pkl
 │
-├── assets/              # Static assets
-│   ├── screenshots/
-│   └── icons/
 │
 └── docs/                # Additional documentation
     ├── deployment.md
@@ -288,16 +285,16 @@ student-performance-dashboard/
 ## 📸 Screenshots
 
 ### Dashboard Overview
-![Dashboard Home](assets/screenshots/dashboard-home.png)
+![Dashboard Home](dashboard.png)
 
 ### Prediction Results
-![Prediction Results](assets/screenshots/prediction-results.png)
+![Prediction Results](performance_result.png)
 
 ### Performance Analysis
-![Performance Analysis](assets/screenshots/performance-analysis.png)
+![Performance Analysis](performance_analysis.png)
 
 ### Recommendations Panel
-![Recommendations](assets/screenshots/recommendations.png)
+![Recommendations](recommendation_system.png)
 
 ## 🤝 Contributing
 
